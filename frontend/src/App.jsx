@@ -1,9 +1,12 @@
+import MainLayout from './layouts/MainLayout'
+import Home from './pages/Home'
+
+
 function App() {
   return (
-    <div>
-      <h1>Mini E-Commerce</h1>
-      <p>Proyecto en desarrollo</p>
-    </div>
+    <MainLayout>
+      <Home/>
+    </MainLayout>
   )
 }
 
