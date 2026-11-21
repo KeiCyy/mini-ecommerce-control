@@ -1,15 +1,25 @@
-function Navbar () {
-    return(
-        <nav>
-            <h2>Mini E-commerce</h2>
+import {Link} from 'react-router-dom'
 
-            <ul>
-                <li>Inicio</li>
-                <li>Productos</li>
-                <li>Carrito</li>
-            </ul>
-        </nav>
-    )
+function Navbar() {
+  return (
+    <nav>
+      <h2>Mini E-Commerce</h2>
+
+      <ul>
+        <li>
+          <Link to="/">Inicio</Link>
+        </li>
+
+        <li>
+          <Link to="/products">Productos</Link>
+        </li>
+
+        <li>
+          <Link to="/cart">Carrito</Link>
+        </li>
+      </ul>
+    </nav>
+  )
 }
 
 export default Navbar
